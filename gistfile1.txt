@@ -1,0 +1,58 @@
+#!/usr/bin/env python3
+
+
+shape_list = ["krychle", "kvadr", "koule", "ctverec", "obdelnik", "kruh"]
+
+
+shape_input = input("Vyberte si těleso, se kterým chcete počítat (krychle, kvadr, koule, ctverec, obdelnik, kruh): ")
+
+
+if shape_input in shape_list:
+    print("Teleso je definovano.")
+else:
+    print("Teleso neni definovano.")
+
+if shape_input == "krychle":
+    a = float(input("Zadejte hodnotu a: "))
+
+    result = a * a * a
+    print(f"Vysledek a * a * a je: {result}")
+
+if shape_input == "kvadr":
+    
+    a = float(input("Zadejte hodnotu a: "))
+    b = float(input("Zadejte hodnotu b: "))
+    c = float(input("Zadejte hodnotu c: "))
+    
+    result = a * b * c
+    print(f"Výsledek a * b * c je: {result}")
+
+if shape_input == "koule":
+
+    r = float(input("Zadejte polomer r: "))
+
+    result = 4/3 * 3.14 * r * r * r
+    print(f"Objem koule je {result}")
+
+if shape_input == "ctverec":
+    a= float(input("Zadejte hodnotu a: "))
+
+    result1 = 4 * a
+    result2 = a * a
+    print(f"Obvod ctverce je: {result1} a obsah ctverce je {result2} ")
+
+if shape_input == "obdelnik":
+    a= float(input("Zadejte hodnotu a: "))
+    b= float(input("Zadejte hodnotu b: "))
+
+    result1 = 2 * (a + b)
+    result2 = a * b
+    print(f"Obvod obdelniku je: {result1} a obsah obdelniku je {result2} ")
+    
+if shape_input == "kruh":
+    r = float(input("Zadejte polomer r:"))
+
+    result1 = 2 * 3.14 * r
+    result2 = 3.14 * r * r
+    print(f"Obvod kruhu je: {result1} a obsah kruhu je {result2} ")
+    
