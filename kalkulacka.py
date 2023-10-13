@@ -8,42 +8,30 @@ if shape_input in shape_list:
 
     if shape_input == "krychle":
         a = float(input("Zadejte hodnotu a: "))
-        result = a * a * a
-        result1 = 6 * a * a
-        print(f" Objem krychle je: {result} a povrch krychle je : {result1} ")
+        print(f" Objem krychle je: {a*a*a} a povrch krychle je : {6*a*a} ")
 
     if shape_input == "kvadr":
         a = float(input("Zadejte hodnotu a: "))
         b = float(input("Zadejte hodnotu b: "))
         c = float(input("Zadejte hodnotu c: "))
-        result = a * b * c
-        result1 = (2 * a * b) + (2 * a * c) + (2 * b * c)
-        print(f" Objem kvadru je: {result} a povrch kvadru je  {result1}")
+        print(f" Objem kvadru je: {a * b * c} a povrch kvadru je  {(2 * a * b) + (2 * a * c) + (2 * b * c)}")
 
     if shape_input == "koule":
         r = float(input("Zadejte polomer r: "))
-        result = 4/3 * math.pi * r * r * r
-        result1 = 4 * math.pi * r * r
-        print(f" Objem koule je {result} a povrch koule je  {result1}")
+        print(f" Objem koule je {4/3 * math.pi * r * r * r} a povrch koule je  {4 * math.pi * r * r}")
 
     if shape_input == "ctverec":
         a= float(input("Zadejte hodnotu a: "))
-        result1 = 4 * a
-        result2 = a * a
-        print(f" Obvod ctverce je: {result1} a obsah ctverce je {result2} ")
+        print(f" Obvod ctverce je: {4 * a} a obsah ctverce je {a * a} ")
 
     if shape_input == "obdelnik":
         a= float(input("Zadejte hodnotu a: "))
         b= float(input("Zadejte hodnotu b: "))
-        result1 = 2 * (a + b)
-        result2 = a * b
-        print(f" Obvod obdelniku je: {result1} a obsah obdelniku je {result2} ")
+        print(f" Obvod obdelniku je: {2 * (a + b)} a obsah obdelniku je {a * b} ")
         
     if shape_input == "kruh":
         r = float(input("Zadejte polomer r:"))
-        result1 = 2 * math.pi * r
-        result2 = math.pi * r * r
-        print(f" Obvod kruhu je: {result1} a obsah kruhu je {result2} ")
+        print(f" Obvod kruhu je: {2 * math.pi * r} a obsah kruhu je {math.pi * r * r} ")
 
 else:
     print("Teleso neni definovano.")
